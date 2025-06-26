@@ -22,7 +22,7 @@ A modern API Gateway built with YARP (Yet Another Reverse Proxy) for .NET 8, fea
 ### 1. Clone and Build
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/shahghasiadil/yarp-api-gateway.git
 cd Yarp.ApiGateway
 dotnet restore
 dotnet build
@@ -104,6 +104,7 @@ The API Gateway will be available at `https://localhost:5001` (or the configured
 ### Rate Limiting
 
 The gateway implements fixed-window rate limiting:
+
 - **Limit**: 600 requests per minute per IP
 - **Window**: 1 minute
 - **Queue Limit**: 0 (no queuing)
@@ -147,9 +148,11 @@ Your JWT tokens should include the following claims:
 ## API Endpoints
 
 ### Health Check
+
 - **GET** `/` - Returns gateway status (requires authentication)
 
 ### Proxy Routes
+
 - All routes configured in `appsettings.json` are proxied to backend services
 - Routes can have specific authorization policies applied
 
@@ -246,6 +249,7 @@ Enable detailed logging for debugging:
 ## Support
 
 For issues and questions:
+
 - Create an issue in the repository
 - Check the [YARP documentation](https://microsoft.github.io/reverse-proxy/)
 - Review [ASP.NET Core documentation](https://docs.microsoft.com/en-us/aspnet/core/)
