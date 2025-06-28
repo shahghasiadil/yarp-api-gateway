@@ -32,10 +32,12 @@ Yarp.ApiGateway/
 ## 🚀 Quick Start
 
 ### Prerequisites
+
 - .NET 8.0 SDK or later
 - Visual Studio 2022, VS Code, or any .NET-compatible IDE
 
 ### Build and Run
+
 ```bash
 # Clone the repository
 git clone <repository-url>
@@ -53,15 +55,18 @@ The API Gateway will be available at `https://localhost:5001` (or the configured
 ## 📁 Organization
 
 ### `src/Yarp.ApiGateway/`
+
 - **Configuration/**: Strongly-typed configuration classes
 - **Extensions/**: Service collection and application builder extensions
 - **Middleware/**: Custom middleware components
 - **Program.cs**: Main application entry point
 
 ### `config/`
+
 - Configuration files (`appsettings.json`, `appsettings.Development.json`)
 
 ### `docs/`
+
 - Detailed documentation and guides
 
 ## 🔧 Features
@@ -88,14 +93,11 @@ For detailed documentation, configuration examples, and advanced usage, see the 
 ## 🛠️ Development
 
 The project follows clean architecture principles with:
+
 - Separation of concerns
 - Dependency injection
 - Extension methods for clean configuration
 - Strongly-typed settings
-
-## 📄 License
-
-[Add your license information here]
 
 ## 🤝 Contributing
 
@@ -103,4 +105,4 @@ The project follows clean architecture principles with:
 2. Create a feature branch
 3. Make your changes
 4. Add tests if applicable
-5. Submit a pull request 
+5. Submit a pull request
